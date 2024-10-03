@@ -1,0 +1,332 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom styles */
+.nav-link {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0px; 
+  height: 2px; 
+  background-color: #009933;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 16px;
+}
+.nav-item {
+  float: left;
+  cursor: pointer;
+}
+
+.popup {
+  display: none; 
+  position: absolute; 
+  background-color: #f9f9f9;
+  min-width: 220px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 2px; 
+}
+
+.nav-item:hover .popup {
+  display: block; 
+}
+
+.popup ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popup li {
+  padding: 12px 16px;
+  color: black;
+  position: relative;
+  border-bottom: 1px solid lightgrey;
+}
+
+.popup li::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 50%; 
+  width: 3px; 
+  height: 0; 
+  background-color: green;
+  transition: height 0.5s ease, top 0.5s ease;
+  z-index: 10;
+}
+
+.popup li:hover::before {
+  height: 100%; 
+  top: 0;
+}
+/* hero background */
+.hero-bg {
+  background-image: url('https://png.pngtree.com/background/20230113/original/pngtree-big-data-blue-technology-texture-background-picture-image_2002065.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.hero-bg-overlay{
+  position: absolute;
+  background-color: rgba(0, 44, 91, 0.6);
+  height: 100%;
+  width: 100%;
+}
+.text-underline{
+  position:relative;
+}
+.text-underline::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px; 
+  height: 5px; 
+  background: linear-gradient(to right, #009933 50%, #002c5b 50%);
+}
+.faq-text-underline{
+  position:relative;
+}
+.faq-text-underline::after{
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 50px; 
+  height: 5px; 
+  background: linear-gradient(to right, #009933 50%, #002c5b 50%);
+}
+.founded-bg{
+  background-image: url('../../src/assets/man-holding-laptop.png');
+  background-size: cover;
+  height: 80vh;
+  background-position: center;
+  position: relative;
+}
+.founded-banner{
+  position: absolute;
+  background-color: #009933;
+  padding: 20px;
+  color: white;
+  width: 85%;
+  margin-inline: auto;
+  text-align: center;
+  position: relative;
+  top: 93%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.founded-banner::before{
+  content:'';
+  position: absolute;
+  background: #009933;
+  width: 20px;
+  height: 20px;
+  top:-10px;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: rotate(45deg);
+}
+.stats-bg{
+  background-image: url('https://duplexo.cymolthemes.com/duplexo-data/wp-content/uploads/sites/2/2020/03/col-bg-2.jpg?id=1640');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.stats-overlay{
+  position: absolute;
+  background-color: white;
+  opacity: 0.94;
+  height: 100%;
+  inset: 0;
+}
+.get-started-bg{
+  background-image: url('http://www.tendersure.co.ke/wp-content/uploads/2021/07/Pic-6.jpg?id=1888');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+}
+.get-started-overlay{
+  position: absolute;
+  background-color: #009933;
+  opacity: 0.82;
+  height: 100%;
+  inset: 0;
+}
+.contact-us-bg{
+  background-image: url('http://www.tendersure.co.ke/wp-content/uploads/2021/07/Cloud-Based-Banner-scaled.jpg?id=1895');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.contact-us-overlay{
+  position: absolute;
+  background-color: #002c5b;
+  opacity: 0.91;
+  height: 100%;
+  inset: 0;
+}
+.contact-underline{
+  position:relative;
+}
+.contact-underline::after{
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 60px; 
+  height: 5px; 
+  background: linear-gradient(to right, #009933 50%, white 50%);
+}
+.contact-form-bg{
+  background-image: url('https://duplexo.cymolthemes.com/duplexo-data/wp-content/uploads/sites/2/2020/01/cmt-colbg03.png?id=575');
+  background-size: cover;
+  height: 90vh;
+  background-position: center;
+}
+.contact-banner-bg{
+  background-image: url('http://www.tendersure.co.ke/wp-content/uploads/2021/07/Digital-BAnner-scaled.jpg?id=1891');
+  background-size: cover;
+  height: 90vh;
+  background-position: center;
+}
+/* nav banner */
+.navBanner{
+  background-image: url('http://www.tendersure.co.ke/wp-content/uploads/2021/07/Title-Banner-1.jpg');
+  background-size: cover;
+  height: 10vh;
+  background-position: center;
+}
+.company-background{
+  background-image: url('https://www.tendersure.africa/wp-content/uploads/2020/01/cmt-colbg03.png?id=575');
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+}
+.image-scroll-container {
+  width: 100%; 
+  overflow: hidden;
+  position: relative;
+}
+
+.image-scroll {
+  display: flex; 
+  animation: scroll 50s linear infinite; 
+}
+
+.image-scroll img {
+  width: 200px;
+  height: auto;
+  margin-right: 10px;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  25% {
+      transform: translateX(-50%);
+  }
+  50% {
+      transform: translateX(-100%); 
+  }
+  75% {
+      transform: translateX(-50%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
