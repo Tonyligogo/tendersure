@@ -3,7 +3,7 @@ import NavBanner from "../components/NavBanner"
 import { IoLocationOutline } from "react-icons/io5"
 import { GoClock } from "react-icons/go"
 import { FaPhoneVolume } from "react-icons/fa6"
-import Map from "../assets/map.png"
+import Map from "../assets/Map.png"
 
 function ContactUs() {
   return (
