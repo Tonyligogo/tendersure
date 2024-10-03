@@ -4,6 +4,7 @@ import { MdOutlineAttachEmail } from "react-icons/md";
 import { IoLocationOutline, IoMenu } from "react-icons/io5";
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const links=[
   {name:'Background', href:'/background'},
@@ -47,7 +48,9 @@ function Navbar() {
             <IoMdClose className="block cursor-pointer lg:hidden h-10 w-10"/>
             }
         </span>
+        <Link to='/'>
         <img src="https://www.tendersure.africa/wp-content/uploads/2024/05/Untitled_design-removebg.png" alt="logo" className="max-h-[70px] mx-auto lg:mx-0"/>
+        </Link>
         </div>
         <ul className={`${!openMenu ? 'top-[110px] opacity-100' :'top-[-600px]'} z-[100] absolute bg-white border-t-2 border-t-customGreen w-[90%] md:w-[96%]
       md:opacity-100 opacity-0 transition-all ease-in duration-500`}>

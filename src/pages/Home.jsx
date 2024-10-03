@@ -151,7 +151,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col mt-10 lg:mt-0 lg:flex-row items-center lg:gap-10 px-4 lg:px-20">
+      <div className="flex flex-col mt-10 mb-10 lg:mt-0 lg:flex-row items-center lg:gap-10 px-4 lg:px-20">
         <div className="founded-bg !h-[50vh] w-full lg:flex-1">
         <div className="founded-banner !top-[80%] text-xl"> <BsBuildings className="text-3xl lg:text-4xl"/> Founded in 2005</div>
         </div>
@@ -193,28 +193,28 @@ function Home() {
       </div>
       <div className="stats-bg h-[80vh] md:h-[60vh] lg:h-[40vh]">
         <div className="stats-overlay flex flex-col md:py-5 justify-center lg:flex-row px-4 lg:px-20 items-center gap-6">
-            <div className="flex bg-[#eae9ea] w-full h-[120px] md:w-1/2 p-5 px-10 lg:p-10 gap-5">
+            <div className="flex bg-[#eae9ea] w-full h-[120px] lg:h-[150px] md:w-1/2 p-5 px-10 lg:p-10 gap-5">
             <FaSuitcase className="text-5xl text-customGreen"/>
                 <div>
                     <span className="block text-4xl text-customBlue font-bold">5000 +</span>
                     <span className="text-gray-500">Tenders</span>
                 </div>
             </div>
-            <div className="flex bg-[#eae9ea] p-5 w-full h-[120px] md:w-1/2 px-10 lg:p-10 gap-5">
+            <div className="flex bg-[#eae9ea] p-5 w-full h-[120px] lg:h-[150px] md:w-1/2 px-10 lg:p-10 gap-5">
             <FaRegEdit className="text-5xl text-customGreen"/>
                 <div>
                     <span className="block text-4xl text-customBlue font-bold">15 +</span>
                     <span className="text-gray-500">Years of Experience</span>
                 </div>
             </div>
-            <div className="flex bg-[#eae9ea] p-5 w-full h-[120px] md:w-1/2 px-10 lg:p-10 gap-5">
+            <div className="flex bg-[#eae9ea] p-5 w-full h-[120px] lg:h-[150px] md:w-1/2 px-10 lg:p-10 gap-5">
             <FaThumbsUp className="text-5xl text-customGreen"/>
                 <div>
                     <span className="block text-4xl text-customBlue font-bold">1000 +</span>
                     <span className="text-gray-500">Happy Clients</span>
                 </div>
             </div>
-            <div className="flex bg-[#eae9ea] p-5 w-full h-[120px] md:w-1/2 px-10 lg:p-10 gap-5">
+            <div className="flex bg-[#eae9ea] p-5 w-full h-[120px] lg:h-[150px] md:w-1/2 px-10 lg:p-10 gap-5">
             <FaTrophy className="text-5xl text-customGreen"/>
                 <div>
                     <span className="block text-4xl text-customBlue font-bold">5 +</span>

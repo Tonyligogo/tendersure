@@ -185,7 +185,7 @@ select {
   background: linear-gradient(to right, #009933 50%, #002c5b 50%);
 }
 .founded-bg{
-  background-image: url('../../src/assets/man-holding-laptop.png');
+  background-image: url('src/assets/man-holding-laptop.png');
   background-size: cover;
   height: 80vh;
   background-position: center;
