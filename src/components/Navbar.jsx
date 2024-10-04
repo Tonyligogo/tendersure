@@ -48,15 +48,15 @@ function Navbar() {
             <IoMdClose className="block cursor-pointer lg:hidden h-10 w-10"/>
             }
         </span>
-        <Link to='/'>
-        <img src="https://www.tendersure.africa/wp-content/uploads/2024/05/Untitled_design-removebg.png" alt="logo" className="max-h-[70px] mx-auto lg:mx-0"/>
+        <Link to='/' className="mx-auto lg:mx-0">
+        <img src="https://www.tendersure.africa/wp-content/uploads/2024/05/Untitled_design-removebg.png" alt="logo" className="max-h-[70px]"/>
         </Link>
         </div>
         <ul className={`${!openMenu ? 'top-[110px] opacity-100' :'top-[-600px]'} z-[100] absolute bg-white border-t-2 border-t-customGreen w-[90%] md:w-[96%]
       md:opacity-100 opacity-0 transition-all ease-in duration-500`}>
         {links.map((link)=>(
             <li key={link.name} onClick={()=>setOpenMenu(true)} className="my-3 pb-3 border-b mx-6">
-              <a href={link.href}>{link.name}</a>
+              <Link to={link.href}>{link.name}</Link>
             </li>
         ))}
       </ul>

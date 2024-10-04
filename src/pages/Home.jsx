@@ -152,8 +152,8 @@ function Home() {
         </div>
       </div>
       <div className="flex flex-col mt-10 mb-10 lg:mt-0 lg:flex-row items-center lg:gap-10 px-4 lg:px-20">
-        <div className="founded-bg !h-[50vh] w-full lg:flex-1">
-        <div className="founded-banner !top-[80%] text-xl"> <BsBuildings className="text-3xl lg:text-4xl"/> Founded in 2005</div>
+        <div className="founded-bg w-full lg:flex-1">
+        <div className="founded-banner top-[80%] lg:top-[93%] text-xl"> <BsBuildings className="text-3xl lg:text-4xl"/> Founded in 2005</div>
         </div>
         <div className="flex-[1.5] px-4 py-8 lg:px-0 lg:py-0 shadow-md lg:shadow-none">
           <span className="text-gray-500 font-bold">SOLUTION OVERVIEW</span>
