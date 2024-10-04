@@ -187,7 +187,6 @@ select {
 .founded-bg{
   background-image: url('../src/assets/man-holding-laptop.png');
   background-size: cover;
-  height: 80vh;
   background-position: center;
   position: relative;
 }
