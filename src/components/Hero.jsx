@@ -1,4 +1,5 @@
 import { BsDashLg } from "react-icons/bs";
+import { Link } from "react-router-dom";
 function Hero() {
 
   return (
@@ -10,8 +11,8 @@ function Hero() {
                 <h2 className="font-bold text-base md:text-3xl lg:text-5xl">E-PROCUREMENT SOLUTION</h2>
                 <p className="text-sm lg:text-xl">Promoting good governance, transparency and integrity in the procurement process.</p>
                 <div className="flex justify-center md:justify-start gap-3 lg:gap-14">
-                    <button className="bg-[#00d68b] py-1 lg:py-3 px-3 lg:px-8 text:xs lg:text-xl font-bold text-customBlue">Available Jobs</button>
-                    <button className="border lg:border-2 py-1 lg:py-3 px-3 lg:px-8 border-white">Contact Us</button>
+                    <Link to='/available-jobs' className="bg-[#00d68b] py-1 lg:py-3 px-3 lg:px-8 text:xs lg:text-xl font-bold text-customBlue">Available Jobs</Link>
+                    <Link to='/contact-us' className="border lg:border-2 py-1 lg:py-3 px-3 lg:px-8 border-white">Contact Us</Link>
                 </div>
             </div>
             <div >
